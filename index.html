@@ -4,14 +4,133 @@
   <meta charset="UTF-8">
   <title>Nikhesh Kumar Murali</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #007acc; }
+    :root {
+      --color-primary: #0f6cbf;
+      --color-secondary: #2f855a;
+      --color-background: #f6f8fb;
+      --color-surface: #ffffff;
+      --color-text: #1f2933;
+
+      --font-body: "Inter", "Segoe UI", sans-serif;
+      --font-display: "Poppins", "Segoe UI", sans-serif;
+
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 24px;
+      --space-6: 32px;
+      --space-7: 48px;
+      --space-8: 64px;
+
+      --radius-card: 16px;
+      --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      margin: 0;
+      padding: var(--space-8) var(--space-6);
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      display: grid;
+      gap: var(--space-6);
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: 2.75rem;
+      margin-bottom: var(--space-2);
+      color: var(--color-primary);
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      margin-bottom: var(--space-4);
+      color: var(--color-secondary);
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin: 0 0 var(--space-3);
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-3);
+    }
+
+    .links a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .projects {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .project-card {
+      background: var(--color-surface);
+      padding: var(--space-5);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      text-align: left;
+      display: grid;
+      gap: var(--space-2);
+    }
+
+    .project-card h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: var(--color-primary);
+    }
+
+    .project-card p {
+      margin: 0;
+      color: #4b5563;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I’m Nikhesh 👋</h1>
-  <p>Applying AI to Mathematics</p>
-  <p><a href="https://github.com/NikheshKumar">GitHub</a> | 
-     <a href="mailto:nikheshk19@gmail.com">Email</a></p>
+  <main>
+    <header>
+      <h1>Hello, I’m Nikhesh 👋</h1>
+      <p>Applying AI to Mathematics</p>
+      <div class="links">
+        <a href="https://github.com/NikheshKumar">GitHub</a>
+        <span aria-hidden="true">|</span>
+        <a href="mailto:nikheshk19@gmail.com">Email</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project-card">
+          <h3>Symbolic Reasoning Toolkit</h3>
+          <p>A collection of experiments exploring how large language models can assist with symbolic proofs.</p>
+        </article>
+        <article class="project-card">
+          <h3>Geometry Pattern Explorer</h3>
+          <p>Interactive notebooks that visualize geometric intuition through computational experiments.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

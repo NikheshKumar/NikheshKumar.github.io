@@ -4,14 +4,83 @@
   <meta charset="UTF-8">
   <title>Nikhesh Kumar Murali</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #007acc; }
+    :root {
+      color-scheme: light;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-family: sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #005a9c;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #0b5fff;
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      padding: 10px 16px;
+      background: #ffffff;
+      color: #1a1a1a;
+      border: 2px solid #1a1a1a;
+      border-radius: 999px;
+      text-decoration: none;
+      transform: translateY(-200%);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .skip-link:focus-visible {
+      transform: translateY(0);
+    }
+
+    .contact-links {
+      display: inline-flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .contact-link {
+      background: #1a1a1a;
+      border-radius: 999px;
+      color: #ffffff;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-link:hover {
+      background: #0b5fff;
+      color: #ffffff;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I’m Nikhesh 👋</h1>
-  <p>Applying AI to Mathematics</p>
-  <p><a href="https://github.com/NikheshKumar">GitHub</a> | 
-     <a href="mailto:nikheshk19@gmail.com">Email</a></p>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <main id="content">
+    <h1>Hello, I’m Nikhesh 👋</h1>
+    <p>Applying AI to Mathematics</p>
+    <div class="contact-links">
+      <a class="contact-link" href="https://github.com/NikheshKumar">GitHub</a>
+      <a class="contact-link" href="mailto:nikheshk19@gmail.com">Email</a>
+    </div>
+  </main>
 </body>
 </html>

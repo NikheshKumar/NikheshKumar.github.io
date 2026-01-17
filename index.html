@@ -2,85 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nikhesh Kumar Murali: applying AI to mathematics, research, and problem solving.">
+  <meta property="og:title" content="Nikhesh Kumar Murali">
+  <meta property="og:description" content="Applying AI to mathematics, research, and problem solving.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/NikheshKumar">
   <title>Nikhesh Kumar Murali</title>
   <style>
-    :root {
-      color-scheme: light;
-    }
-
     body {
-      background-color: #ffffff;
-      color: #1a1a1a;
       font-family: sans-serif;
-      margin: 50px;
-      text-align: center;
+      margin: 0;
+      padding: 48px 24px;
+      text-align: left;
+      background: #f9fbff;
+      color: #1c2430;
+      line-height: 1.6;
     }
-
-    h1 {
-      color: #005a9c;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
     }
-
-    a {
-      color: inherit;
-    }
-
-    a:focus-visible,
-    button:focus-visible {
-      outline: 3px solid #0b5fff;
-      outline-offset: 3px;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: 16px;
-      top: 16px;
-      padding: 10px 16px;
+    h1 { color: #007acc; margin-bottom: 8px; }
+    header p { margin-top: 0; color: #4b5b6f; }
+    section { margin: 32px 0; }
+    .project-card {
+      padding: 16px 18px;
+      border-radius: 10px;
+      border: 1px solid #d7e2f0;
       background: #ffffff;
-      color: #1a1a1a;
-      border: 2px solid #1a1a1a;
-      border-radius: 999px;
-      text-decoration: none;
-      transform: translateY(-200%);
-      transition: transform 0.2s ease-in-out;
+      margin-bottom: 16px;
     }
-
-    .skip-link:focus-visible {
-      transform: translateY(0);
-    }
-
-    .contact-links {
-      display: inline-flex;
-      gap: 12px;
-      margin-top: 16px;
+    .project-card h3 { margin-top: 0; }
+    .project-card a { color: #007acc; font-weight: 600; }
+    .cta-group {
+      display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      gap: 12px;
     }
-
-    .contact-link {
-      background: #1a1a1a;
+    .cta {
+      display: inline-block;
+      padding: 10px 16px;
       border-radius: 999px;
-      color: #ffffff;
-      padding: 10px 18px;
       text-decoration: none;
+      border: 1px solid #007acc;
+      color: #007acc;
       font-weight: 600;
     }
-
-    .contact-link:hover {
-      background: #0b5fff;
+    .cta.primary {
+      background: #007acc;
       color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#content">Skip to content</a>
-
-  <main id="content">
-    <h1>Hello, I’m Nikhesh 👋</h1>
-    <p>Applying AI to Mathematics</p>
-    <div class="contact-links">
-      <a class="contact-link" href="https://github.com/NikheshKumar">GitHub</a>
-      <a class="contact-link" href="mailto:nikheshk19@gmail.com">Email</a>
-    </div>
-  </main>
+  <div class="container">
+    <header>
+      <h1>Hello, I’m Nikhesh 👋</h1>
+      <p>Applying AI to mathematics with a focus on clarity, curiosity, and practical impact.</p>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>I’m a builder who loves blending mathematical rigor with real-world problem solving. My work spans learning systems, numerical experimentation, and turning ideas into polished demos. I enjoy collaborating with people who care about thoughtful design and measurable outcomes.</p>
+      </section>
+      <section id="projects">
+        <h2>Highlighted Projects</h2>
+        <div class="project-card">
+          <h3>Symbolic Insights Lab</h3>
+          <p>An interactive notebook collection that explores algebraic reasoning techniques and how AI can support proof exploration.</p>
+          <a href="https://github.com/NikheshKumar">View on GitHub →</a>
+        </div>
+        <div class="project-card">
+          <h3>Geometry Explorer</h3>
+          <p>A lightweight web demo for visualizing transformations, designed to make geometric intuition more accessible.</p>
+          <a href="https://nikheshkumar.github.io">See the demo →</a>
+        </div>
+        <div class="project-card">
+          <h3>Applied ML Toolkit</h3>
+          <p>Reusable templates for building, evaluating, and sharing machine learning experiments with clear documentation.</p>
+          <a href="https://github.com/NikheshKumar?tab=repositories">Browse repositories →</a>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Let’s Connect</h2>
+        <p>If you’re interested in collaborating, speaking, or exploring an idea together, I’d love to hear from you.</p>
+        <div class="cta-group">
+          <a class="cta primary" href="mailto:nikheshk19@gmail.com">Email Me</a>
+          <a class="cta" href="https://github.com/NikheshKumar">GitHub</a>
+          <a class="cta" href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Nikhesh Kumar Murali. Thanks for stopping by!</p>
+    </footer>
+  </div>
 </body>
 </html>
